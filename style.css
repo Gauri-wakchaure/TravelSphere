@@ -1,4 +1,3 @@
-
 /*Google Fonts library */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&family=Vollkorn:ital,wght@1,500&display=swap');
 
@@ -12,7 +11,7 @@ html,body{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .flex-row{
@@ -61,7 +60,6 @@ p{
     color: gray;
 }
 
-
   /*  Navbar */
 
 .nav{
@@ -75,35 +73,16 @@ p{
 }
 
 a.text-gray {
-    color: white;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .nav .nav-menu{
     justify-content: space-between;
 }
 
-.nav .toggle-collapse{
-    position: absolute;
-    top: 0rem;
-    width: 90rem;
-    cursor: pointer;
-    display: none;
-}
-
-.nav .toggle-collapse .toggle-icon{
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.7rem 0;
-}
-
-.nav .toggle-collapse .toggle-icon i{
-    font-size: 1.4rem;
-    color: white;
-}
-
-.collapse{
-    height: 30rem;
-}
 .nav .nav-items{
     display: flex;
     margin: 0;
@@ -111,13 +90,13 @@ a.text-gray {
 
 .nav .nav-items .nav-link{
     padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    font-size: 20px;
     position:relative;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav .nav-items .nav-link:hover a{
-    color:white;
+    color:black;
     transition: 0.3s all;
     text-decoration: none;
 
@@ -128,31 +107,20 @@ a.text-gray {
     display: block;
     width: 0%;
     height: 2px;
-    background-color: white;
+    background-color: black;
     transition: width 0.3;
 }
 
 .nav-link:hover::after{
     width: 100%;
-    transition: width .3s;
+    transition: width .2s;
 }
+
 .nav .nav-brand a{
-    font-size: 2rem;
+    font-size: 42px;
     padding: 0.7rem 2rem;
     display: block;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.nav .social{
-    padding: 1.7rem 1rem;
-}
-
-.nav .social i{
-    padding: 0 0.7rem;
-}
-.nav .social i:hover{
-    color: white;
-    transition: 0.3s;
+    font-family:"Dela Gothic One", sans-serif;
 }
 
 /* Hero Section */
@@ -163,7 +131,7 @@ a.text-gray {
       rgba(0,0,0,0.4),
       rgba(0,0,0,0.4)
     ),
-    url("P.Image/montainbg.jpg"); /* Change image path */
+    url("P.Image/montainbg.jpg"); 
   background-size: cover;
   background-position: center;
 
@@ -183,6 +151,7 @@ a.text-gray {
 .hero h5 {
   letter-spacing: 2px;
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .hero h1 {
@@ -191,14 +160,15 @@ a.text-gray {
 }
 
 .hero p {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 25px;
+  color:white;
 }
 
 /* Primary Button */
 
 .btn-primary {
-  background:rgb(38, 141, 201);
+  background:rgb(41, 120, 184);
   color: rgb(249, 248, 248);
   border: none;
   padding: 12px 30px;
@@ -211,7 +181,6 @@ a.text-gray {
 .btn-primary:hover {
   background: #1976d2;
 }
-
 
 /* Trust Section */
 
@@ -230,7 +199,6 @@ a.text-gray {
   font-size: 14px;
 }
 
-
 /* Mobile Responsive */
 
 @media (max-width: 768px) {
@@ -247,7 +215,6 @@ a.text-gray {
     flex-direction: column;
     gap: 20px;
   }
-
 }
    /*    Main Section- Title   */
 
@@ -369,15 +336,15 @@ main .blogg-content span{
 }
 
 .about-content h1 {
-  font-size: 42px;
+  font-size: 45px;
   margin-bottom: 20px;
-  color: #222;
+  color: black;
 }
 
 .about-content h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 20px;
-  color: #444;
+  color: black;
   line-height: 1.4;
 }
 
@@ -386,6 +353,7 @@ main .blogg-content span{
   color: #666;
   line-height: 1.8;
   margin-bottom: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Button */
@@ -394,8 +362,7 @@ main .blogg-content span{
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  background-color: #17a2b8
-;
+  background-color: rgb(25, 89, 141);
   color: #000;
   text-decoration: none;
   font-weight: bold;
@@ -440,12 +407,13 @@ main .site-content .post-content > .post-image, .post-title{
 }
 
 main .site-content .post-content > .post-image .post-info{
-    background: #5a9bf1;
+    background:rgb(8, 57, 97);
     padding: 1rem;
     position: absolute;
     bottom: 0%;
     left: 20vw;
     border-radius: 3rem;
+    color: black;
 }
 
 main .site-content .post-content > .post-image > div{
@@ -464,19 +432,21 @@ main .site-content .post-content > .post-image .img:hover{
 main .post-content .post-title a{
     font-family: "Dela Gothic One", sans-serif;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
 }
+main .post-content .post-title p{
+  color: black;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
     padding: .7rem 1.5rem;
     background: #5a9bf1;
-}
-
-.site-content .turnpage{
-    justify-content: center;
-    color: gray;
-    margin: 4rem 0;
 }
 
 .site-content .turnpage a{
@@ -487,19 +457,19 @@ main .post-content .post-title a{
 }
 
 .site-content .turnpage .page{
-    background: rgb(37, 36, 36);
+    background: black;
     color: white;
 }
 
 /*     Sidebar Contents     */
 
 .side-content> .sidebar .category-list{
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
 .site-content > .sidebar .category-list .list-items{
-    background: #3f86e4d9;
+    background: rgb(8, 57, 97);
     padding: .7rem 1rem;
     margin: .8rem 0;
     border-radius: 3rem;
@@ -509,11 +479,14 @@ main .post-content .post-title a{
 }
 
 h2{
-    font-family: 'Lucida Sans',sans-serif;
+    font-family: "Dela Gothic One", sans-serif ;
+    font-size: 45px;
 }
 
 .site-content > .sidebar .category-list .list-items a{
-    color: black;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .site-content .sidebar .mostvisited-posts .post-content{
@@ -529,25 +502,32 @@ h2{
     bottom: 0rem !important;
     left: 1.5rem !important;
     border-radius: 0rem !important;
-    background: rgb(236, 236, 236) !important;
+    background: white !important;
 }
 
 .site-content .sidebar .mostvisited-posts .post-title a{
-    font-size: 1rem;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+
 }
+.site-content .sidebar .mostvisited-posts .post-title p{
+  color: black;
+}
+
 
 .site-content .sidebar .most-searched-tags{
     padding: 8rem 0;
 }
  
 .site-content .sidebar .most-searched-tags .tag .name{
-    background: #3f86e4d9;
+    background: rgb(8, 57, 97);
     padding: .6rem 1rem;
     padding-left: 1rem;
     border-radius: 3rem;
     margin: .6rem .8rem;
+    color:white;
 }
 
 
