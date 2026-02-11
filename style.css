@@ -70,6 +70,9 @@ p{
     min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 a.text-gray {
@@ -259,8 +262,7 @@ main .blogg{
 }
 
 main .blogg .blogg-post{
-    padding-top: 6rem;
-    
+    padding-top: 6rem;   
 }
 
 main .blogg-post .blogg-content{
@@ -298,10 +300,33 @@ main .blogg-content span{
     size: 2rem;
 }
 
+.blogg-content {
+  transition: transform 0.3s ease,
+  box-shadow 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+/* Card Hover */
+.blogg-content:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 27px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* Image Zoom Effect */
+.blogg-content img {
+  transition: transform 0.3s ease;
+}
+
+.blogg-content:hover img {
+  transform: scale(1.05);
+}
+
 /* About Section Styling */
 
 .about-section {
-  padding: 80px 20px;
+  padding: 80px 8%;
   background-color: #ffffff;
   font-family: Arial, sans-serif;
 }
@@ -319,13 +344,20 @@ main .blogg-content span{
 
 .about-image {
   flex: 1;
-  min-width: 280px;
+  min-width: 300px;
+  max-height: 450px;
 }
 
 .about-image img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px rgba(184, 22, 22, 0.15);
+}
+
+.about-image:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 27px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 /* Right Content */
@@ -336,9 +368,17 @@ main .blogg-content span{
 }
 
 .about-content h1 {
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 55px;
+  margin-bottom: 0px;
   color: black;
+  font-family:"Dela Gothic One", sans-serif;
+}
+
+.about-tagline {
+  color: #0b3c5d;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .about-content h2 {
@@ -349,12 +389,33 @@ main .blogg-content span{
 }
 
 .about-content p {
-  font-size: 15px;
+  font-size: 17px;
   color: #666;
   line-height: 1.8;
   margin-bottom: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.about-points {
+  margin: 20px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-points li {
+  margin-bottom: 8px;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-points li::before {
+  content: "✔";
+  color: #0b3c5d;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
 
 /* Button */
 
@@ -389,8 +450,7 @@ main .blogg-content span{
 
 }
 
-
-  /*      Site details Section       */
+  /*     Site details Section      */
 
 main .site-content{
     display: grid;
@@ -423,6 +483,7 @@ main .site-content .post-content > .post-image > div{
 main .site-content .post-content > .post-image .img{
     width: 100%;
     transition: all 1s ease;
+    
 }
 
 main .site-content .post-content > .post-image .img:hover{
@@ -439,6 +500,7 @@ main .post-content .post-title a{
 main .post-content .post-title p{
   color: black;
   font-size: 16px;
+  margin-bottom: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -503,6 +565,7 @@ h2{
     left: 1.5rem !important;
     border-radius: 0rem !important;
     background: white !important;
+    line-height: 1.3;
 }
 
 .site-content .sidebar .mostvisited-posts .post-title a{
@@ -530,6 +593,181 @@ h2{
     color:white;
 }
 
+/*          Contact Page         */
+
+.contact-header {
+    background: linear-gradient(to right, #0b3c5d, #10537a,  #166fa2 );
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-header h1 {
+    font-size: 55px;
+    margin-bottom: 0px;
+    font-family:"Dela Gothic One", sans-serif;
+}
+
+.contact-header p {
+    font-size: 22px;
+    opacity: 0.9;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Main Section */
+
+.contact-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+/* Left Info */
+
+.contact-info h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0b3c5d;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contact-info p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #080808;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.info-box span {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.info-box h4 {
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: #0b3c5d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.info-box p {
+    font-size: 14px;
+}
+
+
+/* Form */
+
+.contact-form {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+    color: #0b3c5d;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+/* Floating Label */
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label {
+    top: -5px;
+    font-size: 12px;
+    color: #328cc1;
+}
+
+
+/* Button */
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #0b3c5d;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #328cc1;
+}
+
+
+/* Footer */
+
+.contact-footer {
+    background: #0b3c5d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-header h1 {
+        font-size: 32px;
+    }
+}
 
 /*    footer     */
 
