@@ -126,6 +126,12 @@ a.text-gray {
     font-family:"Dela Gothic One", sans-serif;
 }
 
+.nav-logo {
+    width: 60px;
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 0px;
+}
 
 /* Hero Section */
 
