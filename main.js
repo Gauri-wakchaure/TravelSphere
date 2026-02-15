@@ -13,6 +13,11 @@ const responsive={
     }
 }
 
+function toggleMenu() {
+  document.querySelector('.nav-links')
+          .classList.toggle('active');
+}
+
 $(document).ready(function(){
     
     $nav=$('.nav');
