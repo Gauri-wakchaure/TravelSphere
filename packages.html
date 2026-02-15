@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelSphere</title>
     <link rel="icon" type="image/png" sizes="128x128" href="P.Image/logo.png">
-<link rel="icon" type="image/png" sizes="64x64" href="P.Image/logo.png">
-
+    <link rel="icon" type="image/png" sizes="64x64" href="P.Image/logo.png">
 
     <!--JQuery cdn-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -25,7 +24,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!----------------------Navigation---------------->
+   
+    <!-------------------Navigation Start---------------->
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
@@ -36,7 +36,7 @@
             <div>    
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="index.html" class="active">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li class="nav-link">
                         <a href="about.html">About</a>
@@ -45,29 +45,28 @@
                         <a href="destinations.html" >Destinations</a>
                     </li>
                     <li class="nav-link">
-                        <a href="packages.html">Packages</a>
+                        <a href="packages.html" class="active">Packages</a>
                     </li>
                     <li class="nav-link">
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!----------xx----------Navigation--------xx------>
+    <!-----------------Navigation End---------------->
 
 <body>
 
-<!-- ================= PAGE HEADER ================= -->
-
+    <!-------Header---------->
 <section class="package-header">
     <h1>Our Exciting Travel Packages</h1>
     <p>Choose your perfect journey with curated travel experiences</p>
 </section>
+     <!------Header End------->
 
 
-<!-- ================= PACKAGES SECTION ================= -->
-
+<!----------------Package Section Start---------------->
 <section class="packages-section">
 
     <!-- Package 1 -->
@@ -92,7 +91,6 @@
         </div>
     </div>
 
-
     <!-- Package 2 -->
     <div class="package-card">
         <img src="P.Image/2nd_bg.jpg" alt="Paris Tour">
@@ -114,7 +112,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Package 3 -->
     <div class="package-card">
@@ -138,7 +135,6 @@
         </div>
     </div>
 
-
     <!-- Package 4 -->
     <div class="package-card">
         <img src="P.Image/post6.jpg" alt="Manali Tour">
@@ -161,13 +157,13 @@
         </div>
     </div>
 
-               <!-- Package 5 -->
-      <div class="package-card">
-    <img src="P.Image/post5.jpg" alt="Kerala Tour">
+    <!-- Package 5 -->
+     <div class="package-card">
+        <img src="P.Image/post5.jpg" alt="Kerala Tour">
 
-    <div class="package-content">
-        <h3>Kerala Backwaters</h3>
-        <p>5 Days / 4 Nights</p>
+        <div class="package-content">
+            <h3>Kerala Backwaters</h3>
+            <p>5 Days / 4 Nights</p>
 
         <ul>
             <li>✔ Houseboat Stay</li>
@@ -183,13 +179,13 @@
     </div>
 </div>
 
-       <!-- Package 6 -->
-<div class="package-card">
-    <img src="P.Image/dubaiimg.jpg" alt="Dubai Tour">
+    <!-- Package 6 -->
+    <div class="package-card">
+        <img src="P.Image/dubaiimg.jpg" alt="Dubai Tour">
 
-    <div class="package-content">
-        <h3>Dubai Luxury Trip</h3>
-        <p>4 Days / 3 Nights</p>
+        <div class="package-content">
+            <h3>Dubai Luxury Trip</h3>
+            <p>4 Days / 3 Nights</p>
 
         <ul>
             <li>✔ Desert Safari</li>
@@ -205,13 +201,13 @@
     </div>
 </div>
      
-      <!-- Package 7 -->
-<div class="package-card">
-    <img src="P.Image/shimlaimg.jpg" alt="Shimla Tour">
+    <!-- Package 7 -->
+    <div class="package-card">
+        <img src="P.Image/shimlaimg.jpg" alt="Shimla Tour">
 
-    <div class="package-content">
-        <h3>Shimla Hill Station</h3>
-        <p>3 Days / 2 Nights</p>
+        <div class="package-content">
+            <h3>Shimla Hill Station</h3>
+            <p>3 Days / 2 Nights</p>
 
         <ul>
             <li>✔ Mall Road</li>
@@ -270,8 +266,10 @@
         </div>
     </div>
 </div>
+<!----------------Package Section End---------------->
 
-<!-- Booking Popup -->
+
+<!-- Booking Form -->
 <div class="popup" id="bookingForm">
 
     <div class="form-box">
@@ -297,20 +295,14 @@
             </button>
 
         </form>
-
+ 
         <br>
 
-        <button class="book-btn" onclick="closeForm()">
-            Close
-        </button>
+        <button class="book-btn" onclick="closeForm()">Close</button>
 
     </div>
 
 </div>
-
-
-
-
 
 </section>
 
@@ -359,8 +351,6 @@
 
 </footer>
 <!-- Footer End -->
-
-<!------xx------Footer Section-------xx------>
 
    <!--JQuery library file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

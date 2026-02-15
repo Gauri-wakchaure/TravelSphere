@@ -257,16 +257,7 @@ main .title .btn:hover{
     color: white;
 }
 
-/*    Main Section- Carousel   */
-
-main .blogg{
-    background: url(P.Image/abstract.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    background-size: 100%;
-}
+/*    Main Section  */
 
 main .blogg .blogg-post{
     padding-top: 6rem;   
@@ -321,7 +312,6 @@ main .blogg-content span{
   cursor: pointer;
 }
 
-/* Image Zoom Effect */
 .blogg-content img {
   transition: transform 0.3s ease;
 }
@@ -330,7 +320,7 @@ main .blogg-content span{
   transform: scale(1.05);
 }
 
-/* About Section Styling */
+/* About Section */
 
 .about-section {
   padding: 80px 8%;
@@ -383,8 +373,8 @@ main .blogg-content span{
 }
 
 .about-tagline {
-  color: #0b3c5d;
-  font-weight: 500;
+  color: #12405a;
+  font-weight: bold;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -424,7 +414,6 @@ main .blogg-content span{
   font-weight: bold;
 }
 
-
 /* Button */
 
 .about-btn {
@@ -440,7 +429,8 @@ main .blogg-content span{
 }
 
 .about-btn:hover {
-  background-color: #1abc9c;
+   background-color: #024383;
+   transform: scale(1.05);
 }
 
 /* Responsive */
@@ -455,10 +445,9 @@ main .blogg-content span{
   .about-content h1 {
     font-size: 34px;
   }
-
 }
 
-  /*     Site details Section      */
+  /*     Site details Section- Destinations     */
 
 main .site-content{
     display: grid;
@@ -490,8 +479,7 @@ main .site-content .post-content > .post-image > div{
 
 main .site-content .post-content > .post-image .img{
     width: 100%;
-    transition: all 1s ease;
-    
+    transition: all 1s ease;   
 }
 
 main .site-content .post-content > .post-image .img:hover{
@@ -505,13 +493,13 @@ main .post-content .post-title a{
     color: #000;
     font-weight: bold;
 }
+
 main .post-content .post-title p{
   color: black;
   font-size: 16px;
   margin-bottom: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 .site-content .post-content .post-title .post-btn{
     border-radius: 0;
@@ -534,8 +522,7 @@ main .post-content .post-title p{
 /*     Sidebar Contents     */
 
 .side-content> .sidebar .category-list{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
 }
 
 .site-content > .sidebar .category-list .list-items{
@@ -581,12 +568,10 @@ h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: black;
-
 }
 .site-content .sidebar .mostvisited-posts .post-title p{
   color: black;
 }
-
 
 .site-content .sidebar .most-searched-tags{
     padding: 8rem 0;
@@ -601,7 +586,7 @@ h2{
     color:white;
 }
 
-/* ================= PACKAGES PAGE ================= */
+/*  Package Section */
 
 /* Header */
 
@@ -623,7 +608,6 @@ h2{
     color: #000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 /* Packages Layout */
 
@@ -652,7 +636,6 @@ h2{
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-
 /* Package Image */
 
 .package-card img {
@@ -665,7 +648,6 @@ h2{
 .package-card:hover img {
     transform: scale(1.08);
 }
-
 
 /* Package Content */
 
@@ -697,15 +679,11 @@ h2{
     margin-bottom: 6px;
 }
 
-/* Footer Section */
-
 .package-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-/* Price */
 
 .price {
     font-size: 20px;
@@ -778,9 +756,7 @@ h2{
     cursor: pointer;
 }
 
-
-
-/*          Contact Page         */
+/*  Contact Page  */
 
 .contact-header {
     background: linear-gradient(to right, #0b3c5d, #10537a,  #166fa2 );
@@ -802,7 +778,6 @@ h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 /* Main Section */
 
 .contact-section {
@@ -815,8 +790,7 @@ h2{
     gap: 50px;
 }
 
-
-/* Left Info */
+/* Left Side Information */
 
 .contact-info h2 {
     font-size: 40px;
@@ -855,8 +829,7 @@ h2{
     font-size: 14px;
 }
 
-
-/* Form */
+/* Contact Form */
 
 .contact-form {
     background: white;
@@ -872,7 +845,6 @@ h2{
     font-weight: bold;
     font-size: 40px;
 }
-
 
 .input-group {
     position: relative;
@@ -901,7 +873,6 @@ h2{
     transition: 0.3s;
 }
 
-
 /* Floating Label */
 
 .input-group input:focus + label,
@@ -909,10 +880,10 @@ h2{
 .input-group textarea:focus + label,
 .input-group textarea:valid + label {
     top: -5px;
-    font-size: 12px;
+    font-size: 14px;
     color: #328cc1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 
 /* Button */
 
@@ -922,16 +893,17 @@ h2{
     background: #0b3c5d;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
 }
 
 .contact-form button:hover {
     background: #328cc1;
 }
-
 
 /* Footer */
 
@@ -942,7 +914,6 @@ h2{
     padding: 20px;
 }
 
-
 /* Responsive */
 
 @media (max-width: 900px) {
@@ -950,7 +921,6 @@ h2{
     .contact-section {
         grid-template-columns: 1fr;
     }
-
     .contact-header h1 {
         font-size: 32px;
     }

@@ -13,7 +13,6 @@ const responsive={
     }
 }
 
-
 $(document).ready(function(){
     
     $nav=$('.nav');
